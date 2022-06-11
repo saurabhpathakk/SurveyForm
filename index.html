@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label><br>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <label for="email" id="email-label">Email</label><br>
+      <input type="email" id="email" placeholder="Enter your Email" required><br>
+      <label for="number" id="number-label">Age(optional)</label><br>
+      <input type="number" min="18" max="75" id="number" placeholder="Age"><br>  
+      <label for="dropdown">Which option best describes your current role?</label><br>
+      <select id="dropdown">
+        <option value="" disabled selected >Select your role</option>
+        <option value="Student">Student</option> 
+     <option value="Full-time-job">Full time Job</option>
+        <option value="Full-time-learner">Full time Learner</option>
+        <option value="Prefer-not-to-say">Prefer not to say</option>
+        <option value="Others">Others</option>
+      </select><br>
+      <p>Do you want to start you career as Software Developer</p>
+      <input type="radio" name="radio" id="yes" value="yes">
+      <label for="yes" value="yes">Yes</label><br>
+      <input type="radio" name="radio" id="no" value="no">
+      <label for="no" value="no" value="no">No</label><br>
+       <input type="radio" name="radio" id="maybe" value="maybe">
+      <label value="maybe" for="maybe">Maybe</label><br>
+      <p>What would you like to work over? (Check all that apply)</p>
+      <input type="checkbox" value="abc">
+      <label>Front-end Projects</label><br>
+      <input type="checkbox" value="abc">
+      <label>Back-end Projects</label><br>
+            <input type="checkbox" value="abc">
+      <label>Data Visualization</label><br>
+            <input type="checkbox" value="abc">
+      <label>Open Source Community</label><br>
+            <input type="checkbox" value="abc">
+      <label>Gitter help rooms</label><br>
+            <input type="checkbox" value="abc">
+      <label>Cloud Computing</label><br><br>
+      <label for="textarea">Any comments or suggestions?</label>
+      <textarea id="textarea"></textarea><br>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>  
